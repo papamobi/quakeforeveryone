@@ -1,0 +1,534 @@
+
+/* Advanced callvote and referee commands
+ *
+ * Use "/set sv_vote callvote.txt" and/or "/set sv_referee callvote.txt" to
+ * enable this file.
+ **/
+
+config, conf {
+	// first argument
+	1 {
+		// little helper, when using "/callvote config" it will show
+		// something like "usage: /callvote config <fileName>"
+		// instead of "usage: /callvote config <*>"
+		argument = "fileName";
+		
+		// any argument
+		* {
+			// "load" is special, it will only pass if the config is
+			// available/exists on the server
+			command = "load $";
+		}
+	}
+	
+	description = "Loads a custom gameplay config.";
+}
+
+restart, map_restart {
+	// no arguments
+	command = "map_restart";
+	
+	description = "Restarts the current map.";
+}
+
+nextmap, rotate {
+	command = "rotate";
+	
+	description = "Forces the next map in server rotation to load.";
+}
+
+gametype, g_gametype {
+	1 {
+		// don't let them vote for the current gametype
+		
+		if ( $g_gametype != GT_FFA ) {
+			ffa, deathmatch, 0 {
+				// client might have used one of the alternatives like "ffa"
+				// explicit use the number "0" instead of the variable "$"
+				command = "set g_gametype 0";
+			}
+		}
+		
+		// just the same for all other gametypes
+		if ( $g_gametype != GT_DUEL ) {
+			duel, tourney, tournament, 1 {
+				command = "set g_gametype 1";
+			}
+		}
+		
+		if ( $g_gametype != GT_TDM ) {
+			tdm, team, 3 {
+				command = "set g_gametype 3";
+			}
+		}
+		
+		if ( $g_gametype != GT_CTF ) {
+			ctf, capture, 4 {
+				command = "set g_gametype 4";
+			}
+		}
+		
+		if ( $g_gametype != GT_RTF ) {
+			rtf, return, returnflag, 5 {
+				command = "set g_gametype 5";
+			}
+		}
+		
+		if ( $g_gametype != GT_1FCTF ) {
+			onectf, 1ctf, 1flag, 1fctf, oneflag, 1flagctf, oneflagctf, 6 {
+				command = "set g_gametype 6";
+			}
+		}
+		
+		if ( $g_gametype != GT_CA ) {
+			ca, clan, arena, clanarena, 7 {
+				command = "set g_gametype 7";
+			}
+		}
+		
+		if ( $g_gametype != GT_FREEZE ) {
+			freeze, tag, ftag, freezetag, 8 {
+				command = "set g_gametype 8";
+			}
+		}
+		
+		if ( $g_gametype != GT_PTL ) {
+			ptl, protect, leader, protectleader, 9 {
+				command = "set g_gametype 9";
+			}
+		}
+	}
+	
+	// second argument is optional
+	2 {
+		argument = "mapName";
+		
+		// empty and "" is just the same
+		empty {
+			// just restart the map so the new gametype is enforced
+			command .= "; map_restart 0";
+		}
+		
+		// assume a valid mapname
+		* {
+			// "map" command is special, it will only pass if the map is
+			// available/exists on the server
+			command .= "; map $";
+		}
+	}
+}
+
+map {
+	1 {
+		argument = "mapName";
+		
+		* {
+			// "map" command is special, it will only pass if the map is
+			// available/exists on the server
+			command = "map $";
+		}
+	}
+}
+
+if ( $g_gametype >= GT_TEAM ) {
+	teamBalance {
+		1 {
+			empty,
+			FPH, 1 {
+				command = "teamBalance 1";
+			}
+			
+			score, 2 {
+				command = "teamBalance 2";
+			}
+		}
+		
+		description = "Balance the teams on the fly, without resetting the game score.";
+	}
+}
+
+timelimit {
+	1 {
+		// referee is god, while mere mortals are limited to a range between 5 and 20
+		REF *,
+		5..20 {
+			command = "set timelimit $";
+		}
+	}
+}
+
+if ( in($g_gametype, GT_CTF, GT_RTF, GT_ONEFLAG) ) {
+	capturelimit {
+		1 {
+			REF *,
+			5..50 {
+				command = "set roundlimit 0; set capturelimit $";
+			}
+		}
+	}
+}
+else {
+	fraglimit {
+		1 {
+			REF *,
+			5..100 {
+				command = "set roundlimit 0; set fraglimit $";
+			}
+		}
+	}
+}
+
+roundlimit {
+	1 {
+		REF *,
+		0..100 {
+			command = "set roundlimit $";
+		}
+	}
+}
+
+physics, sv_physics {
+	1 {
+		//baseq3 {
+		//	command = "set sv_physics 0";
+		//}
+		
+		bunnyhop, +bunnyhop {
+			command = "set sv_physics ". ( $sv_physics | PHYSICS_CONTROL_FORWARD | PHYSICS_CONTROL_SIDEWARD | PHYSICS_CONTROL_STOP );
+		}
+		-bunnyhop {
+			command = "set sv_physics ". ( $sv_physics & ~(PHYSICS_CONTROL_FORWARD | PHYSICS_CONTROL_SIDEWARD | PHYSICS_CONTROL_STOP) );
+		}
+		
+		// referee can set any value
+		REF * {
+			command = "set sv_physics $";
+		}
+	}
+	
+	description = "Changes the movement physics.";
+}
+
+unlagged, sv_unlagged {
+	1 {
+		if ( $sv_unlagged ) {
+			off, 0 {
+				command = "set sv_unlagged 0";
+			}
+		}
+		else {
+			on, 1 {
+				command = "set sv_unlagged 1";
+			}
+		}
+	}
+}
+kick {
+	1 {
+		argument = "playerId";
+		
+		0..63 {
+			command = "k $+";
+		}
+	}
+
+}
+HELP, help {
+    1 {
+        if ( $g_gametype == GT_FTAG ) {
+            CMDS {
+                description = "^1Available Commands\n\n^7- maps ^5(all available maps)\n^7- drop ^5(drop weapon)\n^7- stats ^5(acc stats)\n^7- ready \ teamready\n- timeout \ timein\n- lock \ unlock\n- players ^5(player list)\n^7- away \ back\n\n^1Visit: ^7q3area.blogspot.com";
+            }
+        }
+
+        if ( $g_gametype == GT_FTAG ) {
+            NET {
+                description = "^1Network Settings\n\n^7- rate ^5(50000 or 25000)\n^7- snaps ^5(40 or 30)\n^7- cl_maxPackets ^5(125 or 63)\n^7- cl_packetDup ^52\n^7- cg_delagWeapons ^515\n^7- cl_timeNudge ^5(-12 or 0)\n\n^1Visit: ^7q3area.blogspot.com";
+            }
+        }
+        
+        if ( $g_gametype == GT_FTAG ) {
+            VARS {
+                description = "^1Basic Variables\n\n^7- cg_enemyModel ^5keel/pm\n^7- cg_enemyColors ^522222\n^7- cg_hud ^501-10\n^7- cg_noBobbing ^58 or 15\n^7- cg_drawTimer ^52 or 1\n^7- cg_crosshairColor ^51-9\n^7- cg_modelScale ^52 or 0\n^7- cg_gunX, Y and Z\n\n^1Visit: ^7q3area.blogspot.com";            
+            }
+        }
+    }
+}
+
+
+// Referee commands
+REF warmup, REF g_warmup {
+	1 {
+		on, 1 {
+			command = "set g_doWarmup 1";
+			
+			if ( $g_warmup < 5 ) {
+				command .= "; set g_warmup 5";
+			}
+		}
+		
+		off, 0 {
+			command = "set g_doWarmup 0";
+		}
+		
+		0..999 {
+			command = "set g_doWarmup 1; set g_warmup $";
+		}
+	}
+}
+
+if ( $g_gametype >= GT_TEAM ) {
+	REF friendlyFire, REF g_friendlyFire {
+		1 {
+			on, 1 {
+				command = "set g_friendlyFire 1";
+			}
+			
+			off, 0 {
+				command = "set g_friendlyFire 0";
+			}
+		}
+		
+		description = "Allows hurting team members.";
+	}
+}
+
+REF suddenDeath, REF sv_suddenDeath {
+	1 {
+		on, 1 {
+			command = "set sv_suddenDeath 1";
+		}
+		
+		off, 0 {
+			command = "set sv_suddenDeath 0";
+		}
+	}
+}
+
+REF forceTeam {
+	1 {
+		0..63 {
+			command = "forceteam $";
+		}
+		
+		all {
+			command = "forceteam all";
+		}
+		
+		bots, allbots {
+			command = "forceteam allbots";
+		}
+	}
+	
+	2 {
+		if ( $g_gametype >= GT_TEAM ) {
+			auto, a, free, f {
+				command .= " free";
+			}
+			
+			red, r {
+				command .= " red";
+			}
+			
+			blue, b {
+				command .= " blue";
+			}
+		}
+		else {
+			free, f, auto, a {
+				command .= " free";
+			}
+		}
+		
+		spec, s {
+			command .= " spectator";
+		}
+		
+		away {
+			command .= " away";
+		}
+	}
+}
+
+REF matchMode, REF sv_matchMode {
+	1 {
+		on, 1 {
+			command = "set sv_matchMode 1";
+		}
+		
+		off, 0 {
+			command = "set sv_matchMode 0";
+		}
+	}
+	
+	description = "Enables advanced clan war options like ^3/timeout^7, ^3/lock ^7etc.";
+}
+
+if ( $sv_matchMode ) {
+	if ( $g_gametype >= GT_TEAM ) {
+		REF forceJoin {
+			1 {
+				argument = "playerId";
+				
+				0..63 {
+					command = "forcejoin $";
+				}
+			}
+			
+			2 {
+				red, r {
+					command .= " red";
+				}
+				
+				blue, b {
+					command .= " blue";
+				}
+				
+				none, n {
+					command .= " none";
+				}
+			}
+		}
+		
+		REF lock {
+			1 {
+				all, a {
+					command = "lock all";
+				}
+				
+				red, r {
+					command = "lock red";
+				}
+				
+				blue, b {
+					command = "lock blue";
+				}
+			}
+		}
+		
+		REF unlock {
+			1 {
+				all, a {
+					command = "unlock all";
+				}
+				
+				red, r {
+					command = "unlock red";
+				}
+				
+				blue, b {
+					command = "unlock blue";
+				}
+			}
+		}
+	}
+	
+	REF timeout {
+		command = "timeout";
+	}
+	REF pause {
+		command = "pause";
+	}
+	
+	REF timein {
+		command = "timein";
+	}
+	REF ready {
+		command = "ready";
+	}
+	REF unpause {
+		command = "unpause";
+	}
+	
+	REF notready {
+		command = "notready";
+	}
+}
+
+REF mute {
+	1 {
+		argument = "playerId";
+		
+		0..63 {
+			command = "mute $";
+		}
+	}
+}
+
+REF unmute {
+	1 {
+		argument = "playerId";
+		
+		0..63 {
+			command = "unmute $";
+		}
+	}
+}
+
+REF status, REF s {
+	command = "s";
+}
+
+if ( $sv_userdb ) {
+	REF whois, REF w {
+		1 {
+			argument = "playerId";
+			
+			empty {
+				command = "w";
+			}
+			
+			0..63 {
+				command = "whois $";
+			}
+		}
+	}
+}
+
+REF kick, REF k {
+	1 {
+		argument = "playerId";
+		
+		0..63 {
+			command = "k $+";
+		}
+	}
+	
+	// just to show some valuable information for "/ref kick ?"
+	2 {
+		argument = "duration";
+		
+		REF empty, REF * {}
+	}
+	
+	3 {
+		argument = "reason";
+		
+		REF empty, REF * {}
+	}
+}
+
+REF ban {
+	1 {
+		argument = "playerId";
+		
+		0..63 {
+			command = "ban $+";
+		}
+	}
+	
+	// just to show some valuable information for "/ref ban ?"
+	2 {
+		argument = "duration";
+		
+		REF empty, REF * {}
+	}
+	
+	3 {
+		argument = "reason";
+		
+		REF empty, REF * {}
+	}
+	
+	description = "Bans a player.\n\n^3duration ^7can be used for a temporary ban\nlike ^31w ^7for one week, ^32d ^7for two days,\n^33h ^7for three hours etc.";
+}

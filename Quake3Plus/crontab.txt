@@ -1,0 +1,52 @@
+
+*/8 * * * *	/say ^7[^1INFO^7] ^1Join our discord for ^7FreezeTag^1 pickups at ^7discord.io/quakeforeveryone^1.
+*/9 * * * *	/say ^7[^1INFO^7] ^1If you don't have .cfg for this mod please type ^7/exec q3plus ^1for green enemy and other basic settings.
+*/5 * * * *	/say ^7[^1INFO^7] Discord invite link: ^3https://discord.gg/ANrBAybSfw^7.
+
+
+
+
+
+# Format: Minute Hour Day Month DayOfWeek		Expression
+#
+# values can be
+#  - an asterisk:   *
+#  - a list:        1,2,3,4
+#  - a range:       1-4
+#  - a step:        */2
+#
+# and all sorts of combinations, which internally will be reduced
+# from           0,1,2-4,5,6,7/3
+# to             0,1,2,3,4,5,6,7/3
+# and finally    0,3,6
+#
+# Month and DayOfWeek can also be abbreviations of their name
+# e.g. Jan, Feb, Mar ... or Mon, Tue, Wed ...
+
+// multi-line comments are not available to prevent unexpected
+// behavior with asterisk steps e.g. */2
+
+# Examples
+# Note: you have to uncomment them to see the result
+
+#* * * * *	{
+#	/say This is executed every minute!
+#	/say This also
+#	
+#	// variable fraglimit, 20-50 based on connected players (e.g. 3 players = 30)
+#	$fraglimit = clamp( 20, 50, activeClients() * 10 );
+#}
+
+#* * * * Sat		/say This is executed every minute but only on Saturday!
+
+#if ( Machinegun->Damage >= 10 ) {
+#	*/5 * * * *		/say This is executed every 5 minutes but only with strong Machinegun!
+#}
+
+#0 15 5 Feb *	/say This is executed on the 5th February at 15:00 o'clock!
+
+# Change some settings at midnight
+#0 0 * * *		/exec your-midnight-fun.cfg
+
+# Some generic spam
+#*/10 * * * *	/cp Don't cheat!\n Visit www^1.^7excessiveplus^1.^7net
