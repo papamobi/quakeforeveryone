@@ -1,0 +1,41 @@
+Create user steam:
+
+sudo useradd -m steam
+sudo passwd steam 
+
+If necessary, add user to sudoers: 
+usermod -aG sudo steam
+
+sudo apt install libsdl2-2.0-0:i386
+sudo apt install libsdl2-2.0-0
+sudo apt-get install software-properties-common
+sudo apt install screen
+
+sudo add-apt-repository multiverse
+sudo dpkg --add-architecture i386
+sudo apt update
+sudo apt install lib32gcc-s1 steamcmd
+
+For 32bit server on 64bit machine:
+sudo apt-get install lib32gcc1 lib32z1 lib32stdc++6
+
+If you see error when launching steamcmd "The command could not be located because '/usr/games' is not included in the PATH environment variable."
+
+use this 
+
+PATH=$PATH:/usr/games
+
+Add this to your ~/.bash_profile.
+
+
+Use this line to download and install QLDS
+
+./steamcmd.sh +login anonymous +force_install_dir ./steamapps/common/qlds/ +app_update 349090 +quit ( make sure you are in steamcmd directory)
+
+Installing minqlx
+
+https://github.com/MinoMino/minqlx
+
+Special branch for ca freeze ( no drop) 
+
+git clone https://github.com/em92/minqlx.git -b mobi
