@@ -1,0 +1,337 @@
+{
+"message" "Blood Covenant"
+"music" "music/fla22k_02.wav"
+"classname" "worldspawn"
+}
+{
+"origin" "-512 -768 896"
+"targetname" "t15"
+"classname" "target_position"
+}
+{
+"origin" "-576 -640 960"
+"angle" "300"
+"target" "t15"
+"classname" "info_player_intermission"
+}
+{
+"classname" "trigger_push"
+"target" "t6"
+"model" "*1"
+}
+{
+"classname" "trigger_teleport"
+"target" "misc_teleporter_dest1"
+"model" "*2"
+}
+{
+"classname" "misc_teleporter_dest"
+"targetname" "misc_teleporter_dest1"
+"origin" "-192 -1408 224"
+}
+{
+"classname" "trigger_teleport"
+"target" "misc_teleporter_dest2"
+"model" "*3"
+}
+{
+"classname" "misc_teleporter_dest"
+"targetname" "misc_teleporter_dest2"
+"origin" "-816 -1408 544"
+}
+{
+"classname" "info_notnull"
+"origin" "704 48 638"
+"targetname" "t3"
+}
+{
+"classname" "trigger_push"
+"target" "t3"
+"model" "*4"
+}
+{
+"classname" "info_notnull"
+"angle" "180"
+"origin" "576 -1192 638"
+"targetname" "t5"
+}
+{
+"classname" "trigger_push"
+"target" "t5"
+"model" "*5"
+}
+{
+"classname" "item_armor_body"
+"origin" "1408 -2112 208"
+}
+{
+"classname" "item_health_mega"
+"origin" "-448 128 544"
+}
+{
+"classname" "weapon_railgun"
+"origin" "1600 -768 544"
+}
+{
+"classname" "weapon_shotgun"
+"origin" "1408 -832 32"
+}
+{
+"classname" "item_health"
+"origin" "1088 -1272 552"
+}
+{
+"classname" "item_health"
+"origin" "1152 -1272 552"
+}
+{
+"classname" "item_health"
+"origin" "-640 -576 88"
+}
+{
+"classname" "weapon_plasmagun"
+"origin" "320 -192 40"
+}
+{
+"classname" "item_armor_shard"
+"origin" "1312 -288 40"
+}
+{
+"classname" "item_armor_combat"
+"origin" "320 64 544"
+}
+{
+"classname" "item_health"
+"origin" "1216 -1056 320"
+}
+{
+"classname" "item_health"
+"origin" "-64 -1152 544"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "2360 -1392 424"
+"angle" "180"
+}
+{
+"classname" "item_armor_shard"
+"origin" "608 -512 544"
+}
+{
+"classname" "item_armor_shard"
+"origin" "640 -512 544"
+}
+{
+"classname" "item_armor_shard"
+"origin" "512 -512 544"
+}
+{
+"classname" "item_armor_shard"
+"origin" "544 -512 544"
+}
+{
+"classname" "item_armor_shard"
+"origin" "576 -512 544"
+}
+{
+"classname" "weapon_rocketlauncher"
+"origin" "576 -1344 544"
+}
+{
+"classname" "item_quad"
+"not_gametype" "duel, ft"
+"origin" "-448 -1408 536"
+}
+{
+"classname" "item_health"
+"origin" "1408 -1408 40"
+}
+{
+"classname" "item_health_large"
+"origin" "960 -1016 296"
+}
+{
+"classname" "item_health"
+"origin" "320 -1400 296"
+}
+{
+"classname" "item_armor_shard"
+"origin" "1280 -264 40"
+}
+{
+"classname" "item_armor_shard"
+"origin" "1336 -320 40"
+}
+{
+"classname" "item_armor_shard"
+"origin" "1248 -248 40"
+}
+{
+"classname" "item_armor_shard"
+"origin" "1352 -352 40"
+}
+{
+"classname" "ammo_lightning"
+"origin" "488 544 152"
+}
+{
+"classname" "ammo_rockets"
+"origin" "400 544 152"
+}
+{
+"classname" "ammo_slugs"
+"origin" "1600 -632 536"
+}
+{
+"classname" "ammo_rockets"
+"origin" "2368 -1184 408"
+}
+{
+"classname" "ammo_lightning"
+"origin" "2368 -1288 408"
+}
+{
+"classname" "ammo_cells"
+"origin" "1408 -1464 24"
+}
+{
+"classname" "ammo_bullets"
+"origin" "1344 -1408 24"
+}
+{
+"classname" "ammo_bullets"
+"origin" "1472 -1408 24"
+}
+{
+"classname" "ammo_rockets"
+"origin" "1408 -1352 24"
+}
+{
+"classname" "ammo_shells"
+"origin" "1740 -1348 280"
+}
+{
+"classname" "ammo_grenades"
+"origin" "1740 -1452 280"
+}
+{
+"classname" "weapon_grenadelauncher"
+"origin" "-704 -1024 160"
+}
+{
+"classname" "item_armor_shard"
+"origin" "-608 -1024 160"
+}
+{
+"classname" "item_armor_shard"
+"origin" "-544 -1024 160"
+}
+{
+"classname" "ammo_cells"
+"origin" "-192 -528 80"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "1088 -1536 288"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "-93.7615"
+"origin" "928 -608 288"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "-704 -128 32"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "-704 -896 96"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "1216 -768 288"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "1088 -128 32"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "320 -128 288"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "-92.5546"
+"origin" "576 512 160"
+}
+{
+"classname" "weapon_lightning"
+"origin" "896 -1472 276"
+}
+{
+"classname" "trigger_multiple"
+"target" "t12"
+"wait" "1.0"
+"gametype" "ffa"
+"model" "*6"
+}
+{
+"classname" "target_delay"
+"origin" "672 -832 48"
+"wait" "1.0"
+"targetname" "t12"
+"target" "t13"
+"gametype" "ffa"
+}
+{
+"classname" "target_give"
+"targetname" "t13"
+"origin" "720 -792 40"
+"target" "t14"
+"gametype" "ffa"
+}
+{
+"classname" "item_health_small"
+"origin" "792 -704 104"
+"targetname" "t14"
+"gametype" "ffa"
+}
+{
+"classname" "target_speaker"
+"origin" "720 -856 48"
+"targetname" "t13"
+"noise" "sound/items/armourfield.wav"
+"spawnflags" "4"
+"gametype" "ffa"
+}
+{
+"classname" "trigger_always"
+"origin" "0 0 0"
+}
+{
+"classname" "info_notnull"
+"targetname" "t6"
+"origin" "-448 56 638"
+"angle" "180"
+}
+{
+"origin" "-416 -1024 160"
+"classname" "item_armor_shard"
+}
+{
+"origin" "-480 -1024 160"
+"classname" "item_armor_shard"
+}
+{
+"classname" "item_armor_shard"
+"origin" "-352 -1024 160"
+}
+{
+"classname" "weapon_shotgun"
+"origin" "-56 -1408 216"
+}
+{
+"origin" "-32 -1248 216"
+"classname" "item_health"
+}
+

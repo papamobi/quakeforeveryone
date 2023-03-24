@@ -1,0 +1,843 @@
+{
+"author" "H. Scott 'Deathstalker' Maclean"
+"message" "Castle Deathstalker"
+"_minvertexlight" "25"
+"classname" "worldspawn"
+}
+{
+"classname" "trigger_hurt"
+"spawnflags" "8"
+"dmg" "9999"
+"model" "*1"
+}
+{
+"classname" "trigger_hurt"
+"spawnflags" "8"
+"dmg" "9999"
+"model" "*2"
+}
+{
+"classname" "trigger_hurt"
+"dmg" "9999"
+"spawnflags" "8"
+"model" "*3"
+}
+{
+"classname" "trigger_hurt"
+"dmg" "9999"
+"spawnflags" "8"
+"model" "*4"
+}
+{
+"classname" "trigger_hurt"
+"dmg" "9999"
+"spawnflags" "8"
+"model" "*5"
+}
+{
+"classname" "trigger_hurt"
+"dmg" "9999"
+"spawnflags" "8"
+"model" "*6"
+}
+{
+"classname" "trigger_hurt"
+"spawnflags" "8"
+"dmg" "9999"
+"model" "*7"
+}
+{
+"classname" "trigger_hurt"
+"spawnflags" "8"
+"dmg" "9999"
+"model" "*8"
+}
+{
+"classname" "trigger_hurt"
+"dmg" "9999"
+"spawnflags" "8"
+"model" "*9"
+}
+{
+"origin" "-16 0 232"
+"message" "The Garden"
+"classname" "target_location"
+}
+{
+"origin" "-368 2344 408"
+"angle" "90"
+"targetname" "CD-t1"
+"classname" "misc_teleporter_dest"
+}
+{
+"target" "CD-t1"
+"classname" "trigger_teleport"
+"model" "*10"
+}
+{
+"origin" "-1760 3104 408"
+"arena" "4"
+"angle" "270"
+"classname" "info_player_deathmatch"
+}
+{
+"spawnflags" "12"
+"dmg" "9999"
+"classname" "trigger_hurt"
+"model" "*11"
+}
+{
+"origin" "-1696 3104 408"
+"arena" "4"
+"angle" "270"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "-1632 3104 408"
+"arena" "4"
+"angle" "270"
+"classname" "info_player_deathmatch"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "270"
+"arena" "4"
+"origin" "736 3096 408"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "270"
+"arena" "4"
+"origin" "864 3096 408"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "270"
+"arena" "4"
+"origin" "800 3096 408"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "180"
+"arena" "4"
+"origin" "912 480 408"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "180"
+"arena" "4"
+"origin" "912 352 408"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "180"
+"arena" "4"
+"origin" "912 224 408"
+}
+{
+"origin" "912 -96 408"
+"arena" "4"
+"angle" "180"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "912 -224 408"
+"arena" "4"
+"angle" "180"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "912 -352 408"
+"arena" "4"
+"angle" "180"
+"classname" "info_player_deathmatch"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "270"
+"arena" "4"
+"origin" "-1232 2816 24"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "270"
+"arena" "4"
+"origin" "-1104 2816 24"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "270"
+"arena" "4"
+"origin" "-976 2816 24"
+}
+{
+"origin" "112 2816 24"
+"arena" "4"
+"angle" "270"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "240 2816 24"
+"arena" "4"
+"angle" "270"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "368 2816 24"
+"arena" "4"
+"angle" "270"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "624 480 24"
+"arena" "4"
+"angle" "180"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "624 352 24"
+"arena" "4"
+"angle" "180"
+"classname" "info_player_deathmatch"
+}
+{
+"origin" "624 224 24"
+"arena" "4"
+"angle" "180"
+"classname" "info_player_deathmatch"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "180"
+"arena" "4"
+"origin" "624 -96 24"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "180"
+"arena" "4"
+"origin" "624 -224 24"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "180"
+"arena" "4"
+"origin" "624 -352 24"
+}
+{
+"angles" "30 315 0"
+"origin" "-896 2176 560"
+"targetname" "t8"
+"classname" "misc_portal_camera"
+}
+{
+"target" "t8"
+"classname" "info_player_intermission"
+"origin" "-1376 3360 1056"
+"message" "Castle Deathstalker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/wind2.wav"
+"origin" "800 -1000 824"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-752 696 840"
+}
+{
+"origin" "-656 -1016 808"
+"noise" "sound/world/wind2.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/wind2.wav"
+"origin" "1056 904 888"
+}
+{
+"origin" "-912 136 888"
+"noise" "sound/world/wind2.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/wind2.wav"
+"origin" "-608 808 1016"
+}
+{
+"origin" "-624 824 1000"
+"noise" "sound/world/wind2.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/wind2.wav"
+"origin" "-1936 904 888"
+}
+{
+"origin" "-1760 3112 888"
+"noise" "sound/world/wind2.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/wind2.wav"
+"origin" "-368 3192 888"
+}
+{
+"origin" "864 3112 888"
+"noise" "sound/world/wind2.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/wind2.wav"
+"origin" "1072 1672 888"
+}
+{
+"origin" "-160 1656 936"
+"noise" "sound/world/wind2.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/wind2.wav"
+"origin" "-608 1656 920"
+}
+{
+"origin" "-480 952 840"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-768 968 840"
+}
+{
+"origin" "-496 680 600"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"origin" "-768 952 600"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-496 680 424"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-768 952 424"
+}
+{
+"origin" "-496 680 232"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"origin" "-768 952 232"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-768 952 56"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-368 1128 504"
+}
+{
+"origin" "-368 1400 504"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-368 1720 504"
+}
+{
+"origin" "-368 2088 504"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"origin" "-368 1128 216"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-368 1400 216"
+}
+{
+"origin" "-368 1720 216"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-368 2088 216"
+}
+{
+"origin" "-1488 2120 104"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-1488 1976 104"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-1776 3096 472"
+}
+{
+"origin" "-368 3112 456"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "896 3096 456"
+}
+{
+"origin" "32 2392 504"
+"noise" "sound/world/firesoft.wav"
+"spawnflags" "1"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"spawnflags" "1"
+"noise" "sound/world/firesoft.wav"
+"origin" "-784 2408 504"
+}
+{
+"classname" "target_location"
+"message" "Great Hall"
+"origin" "-368 1632 232"
+}
+{
+"origin" "-1456 1344 232"
+"message" "Side Courtyard"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"message" "Mage's Tower"
+"origin" "-624 832 840"
+}
+{
+"classname" "target_location"
+"message" "Front Courtyard"
+"origin" "240 2752 232"
+}
+{
+"classname" "func_static"
+"model" "*12"
+}
+{
+"targetname" "t1"
+"origin" "-192 -1088 576"
+"classname" "info_null"
+}
+{
+"classname" "func_static"
+"not_gametype" "race ca rr"
+"model" "*13"
+}
+{
+"classname" "weapon_lightning"
+"origin" "-1056 2080 400"
+}
+{
+"not_gametype" "race ca rr"
+"classname" "func_static"
+"model" "*14"
+}
+{
+"origin" "-592 864 782"
+"classname" "weapon_railgun"
+}
+{
+"not_gametype" "race ca rr"
+"classname" "func_static"
+"model" "*15"
+}
+{
+"origin" "-360 2720 16"
+"classname" "weapon_rocketlauncher"
+}
+{
+"classname" "func_static"
+"not_gametype" "race ca rr"
+"model" "*16"
+}
+{
+"classname" "weapon_rocketlauncher"
+"origin" "0 384 16"
+}
+{
+"classname" "func_static"
+"not_gametype" "race ca rr"
+"model" "*17"
+}
+{
+"classname" "item_armor_body"
+"origin" "-1184 1184 16"
+}
+{
+"classname" "func_static"
+"not_gametype" "race ca rr"
+"model" "*18"
+}
+{
+"classname" "item_quad"
+"origin" "-368 1632 16"
+}
+{
+"classname" "func_static"
+"not_gametype" "race ca rr"
+"model" "*19"
+}
+{
+"classname" "item_health_mega"
+"origin" "1016 1952 592"
+}
+{
+"classname" "func_static"
+"not_gametype" "race ca rr"
+"model" "*20"
+}
+{
+"classname" "weapon_shotgun"
+"origin" "-48 2400 400"
+}
+{
+"not_gametype" "race ca rr"
+"classname" "func_static"
+"model" "*21"
+}
+{
+"origin" "-624 832 976"
+"classname" "weapon_bfg"
+}
+{
+"classname" "item_health"
+"origin" "-720 -352 16"
+}
+{
+"origin" "-720 -416 16"
+"classname" "item_health"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "270"
+"arena" "4"
+"origin" "-304 960 24"
+}
+{
+"not_gametype" "race ca rr"
+"classname" "func_static"
+"model" "*22"
+}
+{
+"origin" "-368 1144 400"
+"classname" "weapon_plasmagun"
+}
+{
+"classname" "item_health"
+"origin" "320 2088 16"
+}
+{
+"origin" "384 2088 16"
+"classname" "item_health"
+}
+{
+"classname" "item_armor_shard"
+"origin" "-1248 3040 400"
+}
+{
+"origin" "-1440 3040 400"
+"classname" "item_armor_shard"
+}
+{
+"classname" "item_armor_shard"
+"origin" "-1376 3040 400"
+}
+{
+"origin" "-1312 3040 400"
+"classname" "item_armor_shard"
+}
+{
+"classname" "info_player_deathmatch"
+"angle" "360"
+"arena" "4"
+"origin" "-1488 2048 24"
+}
+{
+"not_gametype" "race ca rr"
+"classname" "func_static"
+"model" "*23"
+}
+{
+"origin" "-1344 2048 16"
+"classname" "weapon_shotgun"
+}
+{
+"not_gametype" "race ca rr"
+"classname" "func_static"
+"model" "*24"
+}
+{
+"origin" "144 1952 40"
+"classname" "item_armor_jacket"
+}
+{
+"not_gametype" "race ca rr"
+"classname" "func_static"
+"model" "*25"
+}
+{
+"origin" "-736 -112 144"
+"classname" "item_armor_combat"
+}
+{
+"not_gametype" "race ca rr"
+"classname" "func_static"
+"model" "*26"
+}
+{
+"origin" "800 -992 400"
+"classname" "weapon_shotgun"
+}
+{
+"not_gametype" "race ca rr"
+"classname" "func_static"
+"model" "*27"
+}
+{
+"origin" "-368 3104 400"
+"classname" "weapon_grenadelauncher"
+}
+{
+"classname" "ammo_pack"
+"origin" "432 2688 48"
+}
+{
+"origin" "432 2688 16"
+"classname" "ammo_slugs"
+}
+{
+"origin" "-1344 2592 16"
+"classname" "ammo_pack"
+}
+{
+"classname" "ammo_cells"
+"origin" "-1344 2656 16"
+}
+{
+"origin" "-1344 2528 16"
+"classname" "ammo_bullets"
+}
+{
+"classname" "item_health"
+"origin" "-1440 1000 16"
+}
+{
+"origin" "-1376 1000 8"
+"classname" "item_health"
+}
+{
+"classname" "ammo_cells"
+"origin" "-1744 856 400"
+}
+{
+"origin" "-1744 856 432"
+"classname" "ammo_pack"
+}
+{
+"classname" "ammo_cells"
+"origin" "-224 -592 16"
+}
+{
+"origin" "-288 -592 16"
+"classname" "ammo_rockets"
+}
+{
+"classname" "ammo_pack"
+"origin" "-256 -592 16"
+}
+{
+"origin" "320 -592 16"
+"classname" "ammo_shells"
+}
+{
+"classname" "ammo_grenades"
+"origin" "256 -592 16"
+}
+{
+"origin" "288 -592 16"
+"classname" "ammo_pack"
+}
+{
+"origin" "-336 1088 16"
+"classname" "ammo_shells"
+}
+{
+"classname" "ammo_bullets"
+"origin" "-400 1088 16"
+}
+{
+"origin" "-368 1088 16"
+"classname" "ammo_pack"
+}
+{
+"classname" "item_health_large"
+"origin" "-1808 2624 592"
+}
+{
+"classname" "func_static"
+"not_gametype" "race ca rr"
+"model" "*28"
+}
+{
+"classname" "weapon_rocketlauncher"
+"origin" "1008 2272 400"
+}
+{
+"classname" "item_health"
+"origin" "-760 2472 400"
+}
+{
+"origin" "944 -448 400"
+"classname" "item_health"
+}
+{
+"classname" "item_health"
+"origin" "944 -576 400"
+}
+{
+"origin" "160 864 400"
+"classname" "item_armor_shard"
+}
+{
+"classname" "item_armor_shard"
+"origin" "224 864 400"
+}
+{
+"classname" "item_armor_shard"
+"origin" "288 864 400"
+}
+{
+"origin" "352 864 400"
+"classname" "item_armor_shard"
+}
+{
+"classname" "item_armor_shard"
+"origin" "416 864 400"
+}
+{
+"origin" "-176 1920 400"
+"classname" "item_health"
+}
+{
+"classname" "item_health"
+"origin" "-176 1536 400"
+}
+{
+"origin" "-560 1728 400"
+"classname" "ammo_pack"
+}
+{
+"origin" "-48 2176 16"
+"classname" "item_health"
+}
+{
+"targetname" "t3"
+"origin" "-496 704 664"
+"classname" "info_notnull"
+}
+{
+"targetname" "t2"
+"classname" "info_notnull"
+"origin" "-752 704 344"
+}
+{
+"targetname" "t4"
+"origin" "-656 992 408"
+"classname" "info_notnull"
+}
+{
+"classname" "info_notnull"
+"origin" "-656 992 24"
+"targetname" "t5"
+}
+{
+"targetname" "t6"
+"origin" "-800 928 24"
+"classname" "info_notnull"
+}
+{
+"classname" "info_notnull"
+"origin" "-464 864 784"
+"targetname" "t7"
+}
+{
+"targetname" "t8"
+"origin" "-896 2176 560"
+"classname" "info_notnull"
+}
+

@@ -1,0 +1,470 @@
+{
+"_minvertexlight" "25"
+"message" "Solid"
+"ambient" "8"
+"classname" "worldspawn"
+"author" "Richard 'swelt' Jacques"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "496 176 24"
+"angle" "225"
+}
+{
+"gametype" "duel"
+"classname" "item_health_mega"
+"origin" "128 80 176"
+}
+{
+"target" "t1"
+"classname" "trigger_push"
+"model" "*1"
+}
+{
+"targetname" "t1"
+"origin" "624 32 352"
+"classname" "target_position"
+}
+{
+"origin" "-1136 336 16"
+"classname" "item_armor_combat"
+}
+{
+"target" "t3"
+"classname" "trigger_push"
+"model" "*2"
+}
+{
+"targetname" "t3"
+"origin" "-1512 160 336"
+"classname" "target_position"
+}
+{
+"gametype" "ffa tdm ft"
+"classname" "item_health_large"
+"origin" "-416 720 112"
+}
+{
+"classname" "ammo_bullets"
+"origin" "32 448 16"
+"gametype" "ffa"
+}
+{
+"classname" "ammo_shells"
+"origin" "32 512 16"
+}
+{
+"gametype" "ffa tdm ft"
+"classname" "weapon_rocketlauncher"
+"origin" "-16 944 392"
+}
+{
+"classname" "item_health_large"
+"origin" "-384 -416 176"
+"gametype" "ffa tdm ft"
+}
+{
+"classname" "weapon_shotgun"
+"origin" "-320 -112 176"
+}
+{
+"classname" "ammo_bullets"
+"origin" "448 -104 16"
+"gametype" "ffa"
+}
+{
+"gametype" "ffa tdm ft"
+"classname" "weapon_plasmagun"
+"origin" "-128 1088 320"
+}
+{
+"classname" "item_health"
+"origin" "-288 352 368"
+}
+{
+"classname" "item_health"
+"origin" "-128 -96 16"
+}
+{
+"classname" "weapon_lightning"
+"origin" "-1264 160 304"
+"not_gametype" "ffa"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "-16 -400 184"
+"angle" "45"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "-1144 40 24"
+"angle" "90"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "-512 -176 376"
+"angle" "180"
+}
+{
+"origin" "-496 400 376"
+"classname" "info_player_deathmatch"
+"angle" "45"
+}
+{
+"classname" "ammo_rockets"
+"origin" "-1392 -112 304"
+}
+{
+"classname" "item_armor_shard"
+"origin" "-704 464 376"
+}
+{
+"origin" "-640 464 376"
+"classname" "item_armor_shard"
+}
+{
+"classname" "item_armor_shard"
+"origin" "-576 464 376"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "-576 384 120"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "16 1008 120"
+"angle" "270"
+}
+{
+"classname" "info_player_deathmatch"
+"origin" "280 -240 376"
+"angle" "90"
+}
+{
+"gametype" "duel"
+"origin" "256 256 368"
+"classname" "weapon_rocketlauncher"
+}
+{
+"message" "^5Quad^7"
+"origin" "-128 1368 328"
+"classname" "target_location"
+}
+{
+"message" "^1RA/RL^7"
+"origin" "128 256 216"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-928 224 328"
+"message" "^3YA/LG^7"
+"not_gametype" "ffa"
+}
+{
+"classname" "item_armor_shard"
+"origin" "128 576 176"
+}
+{
+"origin" "128 512 176"
+"classname" "item_armor_shard"
+}
+{
+"classname" "item_armor_shard"
+"origin" "128 448 176"
+}
+{
+"classname" "info_player_intermission"
+"origin" "448 -240 456"
+"target" "t5"
+}
+{
+"classname" "info_notnull"
+"origin" "136 112 408"
+"targetname" "t5"
+}
+{
+"origin" "-1016 -40 16"
+"classname" "ammo_bullets"
+"gametype" "ffa"
+}
+{
+"classname" "ammo_rockets"
+"origin" "96 416 368"
+}
+{
+"classname" "target_location"
+"origin" "-128 48 328"
+"message" "^1RA/RL^7"
+}
+{
+"classname" "target_location"
+"origin" "320 128 328"
+"message" "^1RA/RL^7"
+}
+{
+"classname" "target_location"
+"origin" "128 320 216"
+"message" "^5RL/YA^7"
+}
+{
+"message" "^1RA/RL^7"
+"origin" "-464 24 168"
+"classname" "target_location"
+}
+{
+"message" "^3YA/CG^7"
+"origin" "-640 24 160"
+"classname" "target_location"
+}
+{
+"message" "^5RL/YA^7"
+"origin" "-528 192 168"
+"classname" "target_location"
+}
+{
+"message" "^3YA/CG^7"
+"origin" "-600 -128 392"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-584 464 392"
+"message" "^3YA/CG^7"
+}
+{
+"message" "^1RA/RL^7"
+"origin" "-504 -128 392"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-504 464 392"
+"message" "^5PG/YA^7"
+}
+{
+"classname" "target_location"
+"origin" "-192 320 392"
+"message" "^1RA/RL^7"
+}
+{
+"message" "^5RL/YA^7"
+"origin" "-192 384 392"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-736 256 160"
+"message" "^3YA/CG^7"
+}
+{
+"gametype" "ffa tdm ft"
+"classname" "item_quad"
+"origin" "-128 1472 240"
+}
+{
+"gametype" "duel"
+"origin" "-128 1472 256"
+"classname" "item_armor_body"
+}
+{
+"gametype" "duel"
+"origin" "-16 944 368"
+"classname" "weapon_shotgun"
+}
+{
+"classname" "func_static"
+"gametype" "duel"
+"model" "*3"
+}
+{
+"gametype" "duel"
+"classname" "func_static"
+"model" "*4"
+}
+{
+"classname" "weapon_rocketlauncher"
+"origin" "-160 696 16"
+"gametype" "duel"
+}
+{
+"classname" "weapon_grenadelauncher"
+"origin" "-784 160 368"
+}
+{
+"origin" "-1384 472 304"
+"classname" "item_health_small"
+}
+{
+"classname" "item_health_small"
+"origin" "-1320 472 304"
+}
+{
+"message" "^5Quad^7"
+"origin" "128 1088 392"
+"classname" "target_location"
+}
+{
+"message" "^5RL/YA^7"
+"origin" "128 1024 392"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-384 1088 168"
+"message" "^5Quad^7"
+}
+{
+"classname" "target_location"
+"origin" "-384 1024 168"
+"message" "^5RL/YA^7"
+}
+{
+"message" "^5RL/YA^7"
+"origin" "-128 704 328"
+"classname" "target_location"
+}
+{
+"classname" "item_armor_jacket"
+"origin" "-384 -416 192"
+"gametype" "duel"
+}
+{
+"origin" "-416 720 144"
+"classname" "item_health"
+"gametype" "duel"
+}
+{
+"origin" "128 80 200"
+"classname" "weapon_rocketlauncher"
+"gametype" "ffa tdm ft"
+}
+{
+"gametype" "ffa tdm ft"
+"classname" "item_armor_body"
+"origin" "256 256 400"
+}
+{
+"classname" "item_armor_combat"
+"origin" "-160 696 48"
+"gametype" "ffa tdm ft"
+}
+{
+"cellId" "397"
+"classname" "advertisement"
+"model" "*5"
+}
+{
+"cellId" "399"
+"classname" "advertisement"
+"model" "*6"
+}
+{
+"cellId" "398"
+"classname" "advertisement"
+"model" "*7"
+}
+{
+"not_gametype" "ca"
+"classname" "func_static"
+"model" "*8"
+}
+{
+"classname" "func_static"
+"not_gametype" "ca"
+"model" "*9"
+}
+{
+"classname" "func_static"
+"not_gametype" "ca"
+"model" "*10"
+}
+{
+"classname" "func_static"
+"not_gametype" "ca"
+"model" "*11"
+}
+{
+"classname" "func_static"
+"not_gametype" "ca"
+"model" "*12"
+}
+{
+"classname" "func_static"
+"not_gametype" "ca"
+"model" "*13"
+}
+{
+"classname" "func_static"
+"not_gametype" "ca"
+"model" "*14"
+}
+{
+"classname" "func_static"
+"not_gametype" "ca"
+"gametype" "duel"
+"model" "*15"
+}
+{
+"classname" "func_static"
+"not_gametype" "ca"
+"model" "*16"
+}
+{
+"not_gametype" "ca"
+"classname" "func_static"
+"model" "*17"
+}
+{
+"not_gametype" "ca"
+"classname" "func_static"
+"gametype" "ffa tdm ft"
+"model" "*18"
+}
+{
+"message" "^3YA/LG^7"
+"origin" "-928 224 344"
+"classname" "target_location"
+"gametype" "ffa"
+}
+{
+"origin" "-1264 160 336"
+"classname" "weapon_chaingun"
+"gametype" "ffa"
+}
+{
+"classname" "ammo_lightning"
+"origin" "-1016 -40 48"
+"not_gametype" "ffa"
+}
+{
+"origin" "448 -104 48"
+"classname" "ammo_lightning"
+"not_gametype" "ffa"
+}
+{
+"origin" "32 448 48"
+"classname" "ammo_lightning"
+"not_gametype" "ffa"
+}
+{
+"origin" "-1392 -112 340"
+"classname" "ammo_pack"
+}
+{
+"origin" "448 -104 84"
+"classname" "ammo_pack"
+}
+{
+"classname" "ammo_pack"
+"origin" "-1016 -40 84"
+}
+{
+"origin" "32 512 52"
+"classname" "ammo_pack"
+}
+{
+"origin" "96 416 404"
+"classname" "ammo_pack"
+}
+

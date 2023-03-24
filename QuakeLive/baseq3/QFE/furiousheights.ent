@@ -1,0 +1,522 @@
+{
+"_minvertexlight" "25"
+"music" "music/fla22k_02.wav"
+"classname" "worldspawn"
+"ambient" "5"
+"message" "Furious Heights"
+}
+{
+"angle" "135"
+"origin" "16 352 24"
+"classname" "info_player_start"
+}
+{
+"origin" "-928 1376 440"
+"classname" "weapon_grenadelauncher"
+}
+{
+"origin" "-64 512 24"
+"classname" "weapon_rocketlauncher"
+"not_gametype" "tdm"
+"gametype" "duel"
+}
+{
+"origin" "192 1088 216"
+"classname" "item_armor_combat"
+}
+{
+"origin" "-224 672 464"
+"classname" "item_armor_shard"
+}
+{
+"classname" "item_armor_shard"
+"origin" "-176 720 464"
+}
+{
+"origin" "-128 768 464"
+"classname" "item_armor_shard"
+}
+{
+"classname" "item_armor_shard"
+"origin" "-80 816 464"
+}
+{
+"origin" "-32 864 464"
+"classname" "item_armor_shard"
+}
+{
+"origin" "-1520 320 -8"
+"classname" "item_armor_body"
+}
+{
+"origin" "288 672 472"
+"classname" "item_health_mega"
+}
+{
+"not_gametype" "tdm"
+"origin" "-672 96 472"
+"classname" "item_health_large"
+}
+{
+"origin" "-32 736 24"
+"classname" "item_health"
+}
+{
+"origin" "-288 -88 408"
+"classname" "weapon_lightning"
+}
+{
+"origin" "-664 504 0"
+"classname" "ammo_lightning"
+}
+{
+"angle" "225"
+"origin" "96 736 24"
+"classname" "info_player_deathmatch"
+}
+{
+"target" "t3"
+"classname" "info_player_deathmatch"
+"origin" "-336 960 216"
+}
+{
+"angle" "45"
+"origin" "-616 920 344"
+"classname" "info_player_deathmatch"
+}
+{
+"angle" "135"
+"classname" "info_player_deathmatch"
+"origin" "288 -160 472"
+}
+{
+"angle" "135"
+"origin" "-528 104 472"
+"classname" "info_player_deathmatch"
+}
+{
+"angle" "45"
+"classname" "info_player_deathmatch"
+"origin" "-1632 800 24"
+}
+{
+"angle" "315"
+"origin" "-416 864 24"
+"classname" "info_player_deathmatch"
+}
+{
+"angle" "135"
+"classname" "info_player_deathmatch"
+"origin" "96 480 24"
+}
+{
+"angle" "135"
+"origin" "-544 112 24"
+"classname" "info_player_deathmatch"
+}
+{
+"angle" "90"
+"classname" "info_player_deathmatch"
+"origin" "-1312 800 440"
+}
+{
+"angle" "45"
+"origin" "-1952 -160 88"
+"classname" "info_player_deathmatch"
+}
+{
+"angle" "180"
+"classname" "info_player_deathmatch"
+"origin" "-928 424 24"
+}
+{
+"angle" "315"
+"origin" "-1688 608 0"
+"classname" "info_player_deathmatch"
+}
+{
+"angle" "315"
+"classname" "info_player_deathmatch"
+"origin" "-1264 448 24"
+}
+{
+"angle" "225"
+"origin" "-864 1440 440"
+"classname" "info_player_deathmatch"
+}
+{
+"angle" "225"
+"classname" "info_player_deathmatch"
+"origin" "-800 608 472"
+}
+{
+"target" "t4"
+"classname" "trigger_teleport"
+"model" "*1"
+}
+{
+"angle" "225"
+"targetname" "t4"
+"origin" "256 1152 472"
+"classname" "misc_teleporter_dest"
+}
+{
+"classname" "weapon_plasmagun"
+"origin" "-1088 320 24"
+}
+{
+"origin" "-288 -224 -8"
+"classname" "item_health"
+}
+{
+"classname" "trigger_push"
+"target" "t5"
+"model" "*2"
+}
+{
+"origin" "-664 456 0"
+"classname" "ammo_cells"
+}
+{
+"classname" "item_health"
+"origin" "160 384 472"
+}
+{
+"classname" "trigger_teleport"
+"target" "t6"
+"model" "*3"
+}
+{
+"classname" "misc_teleporter_dest"
+"origin" "-1728 448 472"
+"targetname" "t6"
+"angle" "360"
+}
+{
+"classname" "item_health_small"
+"origin" "160 96 208"
+}
+{
+"origin" "240 144 208"
+"classname" "item_health_small"
+}
+{
+"classname" "item_health_small"
+"origin" "80 88 208"
+}
+{
+"targetname" "t8"
+"origin" "-64 608 712"
+"classname" "target_position"
+}
+{
+"targetname" "t7"
+"origin" "-256 832 960"
+"classname" "target_position"
+}
+{
+"targetname" "t9"
+"origin" "-224 224 712"
+"classname" "target_position"
+}
+{
+"message" "Hallway Jumppad"
+"classname" "target_position"
+"origin" "-288 -224 480"
+"targetname" "t5"
+}
+{
+"origin" "-1696 128 88"
+"classname" "item_health"
+}
+{
+"origin" "-1920 128 88"
+"classname" "weapon_shotgun"
+}
+{
+"classname" "trigger_push"
+"target" "t10"
+"model" "*4"
+}
+{
+"classname" "target_position"
+"origin" "-1600 -96 512"
+"targetname" "t10"
+}
+{
+"angle" "45"
+"origin" "-288 160 560"
+"classname" "info_player_intermission"
+}
+{
+"classname" "ammo_grenades"
+"origin" "-1344 192 472"
+}
+{
+"classname" "advertisement"
+"cellId" "219"
+"model" "*5"
+}
+{
+"classname" "item_health"
+"origin" "-1040 496 24"
+}
+{
+"spawnflags" "1"
+"not_gametype" "tdm"
+"origin" "-1280 1408 -8"
+"classname" "weapon_railgun"
+}
+{
+"classname" "item_armor_combat"
+"origin" "-1040 1120 88"
+}
+{
+"classname" "weapon_rocketlauncher"
+"origin" "-1536 -96 472"
+"not_gametype" "tdm"
+}
+{
+"classname" "item_health"
+"origin" "-1240 936 24"
+}
+{
+"classname" "trigger_teleport"
+"target" "t11"
+"model" "*6"
+}
+{
+"classname" "misc_teleporter_dest"
+"origin" "-1688 960 440"
+"targetname" "t11"
+"angle" "360"
+}
+{
+"classname" "target_speaker"
+"origin" "-1600 1152 288"
+"noise" "sound/ambient/loop_rain_02.wav"
+"spawnflags" "1"
+}
+{
+"spawnflags" "1"
+"noise" "sound/ambient/loop_rain_04.wav"
+"origin" "-1280 1152 480"
+"classname" "target_speaker"
+}
+{
+"spawnflags" "1"
+"noise" "sound/ambient/loop_rain_02.wav"
+"origin" "-1344 320 480"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"origin" "-1520 320 96"
+"noise" "sound/ambient/loop_rain_04.wav"
+"spawnflags" "1"
+}
+{
+"spawnflags" "1"
+"noise" "sound/ambient/loop_rain_04.wav"
+"origin" "-1088 256 96"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"origin" "-128 768 480"
+"noise" "sound/ambient/loop_rain_02.wav"
+"spawnflags" "1"
+}
+{
+"spawnflags" "1"
+"noise" "sound/ambient/loop_rain_04.wav"
+"origin" "-128 704 64"
+"classname" "target_speaker"
+}
+{
+"classname" "target_speaker"
+"origin" "-128 256 64"
+"noise" "sound/ambient/loop_rain_04.wav"
+"spawnflags" "1"
+}
+{
+"classname" "ammo_rockets"
+"origin" "-1192 960 440"
+}
+{
+"message" "Bridge Area High"
+"origin" "192 1088 544"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-288 -88 472"
+"message" "Hallway Jumppad"
+}
+{
+"classname" "target_location"
+"origin" "-832 0 544"
+"message" "Pillars High"
+}
+{
+"message" "Cistern High"
+"origin" "-1280 1376 480"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-1408 1152 72"
+"message" "Cistern Low"
+}
+{
+"message" "Pillars Low"
+"origin" "-1504 320 64"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-128 576 96"
+"message" "Bridge Area Low"
+}
+{
+"classname" "target_location"
+"origin" "-448 480 544"
+"message" "Bridge Area High"
+}
+{
+"message" "Bridge Area High"
+"origin" "48 192 544"
+"classname" "target_location"
+}
+{
+"message" "Pillars High"
+"origin" "-1536 -96 544"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-1472 960 480"
+"message" "Cistern High"
+}
+{
+"classname" "target_location"
+"origin" "-1536 448 544"
+"message" "Pillars High"
+}
+{
+"classname" "target_location"
+"origin" "-1120 160 64"
+"message" "Pillars Low"
+}
+{
+"classname" "target_location"
+"origin" "-544 1120 352"
+"message" "Bridge Area High"
+}
+{
+"message" "Back Hallway"
+"origin" "-944 1152 480"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-944 768 480"
+"message" "Back Hallway"
+}
+{
+"message" "Bridge Area Low"
+"origin" "-608 480 96"
+"classname" "target_location"
+}
+{
+"message" "Bridge Area Mid"
+"origin" "192 1088 288"
+"classname" "target_location"
+}
+{
+"classname" "target_location"
+"origin" "-128 768 544"
+"message" "Bridge Area High"
+}
+{
+"message" "Pillars High"
+"origin" "-928 544 544"
+"classname" "target_location"
+}
+{
+"message" "Bridge Area Low"
+"origin" "-288 -128 64"
+"classname" "target_location"
+}
+{
+"message" "Cistern Low"
+"origin" "-1216 832 288"
+"classname" "target_location"
+}
+{
+"cellId" "220"
+"classname" "advertisement"
+"model" "*7"
+}
+{
+"gametype" "tdm"
+"origin" "-672 96 512"
+"classname" "item_health"
+}
+{
+"origin" "160 1056 472"
+"classname" "weapon_rocketlauncher"
+"not_gametype" "duel"
+}
+{
+"not_gametype" "tdm"
+"classname" "func_static"
+"model" "*8"
+}
+{
+"classname" "func_static"
+"gametype" "tdm"
+"model" "*9"
+}
+{
+"classname" "func_static"
+"not_gametype" "tdm"
+"model" "*10"
+}
+{
+"classname" "func_static"
+"not_gametype" "duel"
+"model" "*11"
+}
+{
+"classname" "item_quad"
+"origin" "-64 512 56"
+"not_gametype" "duel, ft"
+}
+{
+"not_gametype" "ffa race tdm"
+"classname" "ammo_lightning"
+"origin" "-1624 1376 448"
+}
+{
+"origin" "-1624 1376 416"
+"classname" "weapon_railgun"
+"gametype" "tdm"
+}
+{
+"origin" "-1344 192 508"
+"classname" "ammo_pack"
+}
+{
+"classname" "ammo_pack"
+"origin" "-664 480 36"
+}
+{
+"origin" "-1192 960 476"
+"classname" "ammo_pack"
+}
+{
+"origin" "-1624 1324 416"
+"classname" "ammo_pack"
+}
+
