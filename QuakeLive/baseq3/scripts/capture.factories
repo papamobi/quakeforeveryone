@@ -1,0 +1,28 @@
+{
+    "cvars": {
+      "g_startingWeapons": "65",
+      "capturelimit": "8",
+      "g_suddenDeathRespawn": "1",
+      "g_instagib": "1",
+      "g_dropCmds": "1",
+      "timelimit": "20",
+      "dmflags": "28",
+      "g_timeoutCount": "3",
+      "g_timeoutLen": "300",
+      "g_allowKill": "0",
+      "g_overtime": "0",
+      "pmove_bunnyhop": "1",
+      "pmove_CrouchStepJump": "1",
+      "pmove_JumpTimeDeltaMin": "100.0f",
+      "pmove_WaterSwimScale": "0.6f",
+      "pmove_WaterWadeScale": "0.8f",
+      "qlx_balanceApi": "elo_b",
+	  "sv_WarmupReadyPercentage": "1.0",
+	  "g_knockback": "1000"
+    },
+    "author": "id Software",
+    "description": "Railgun and Gauntlet only. One shot, one kill.",
+    "basegt": "ctf",
+    "id": "eqictf",
+    "title": "euroQuake iCTF"
+ }

@@ -1,0 +1,28 @@
+{
+"id": "trickdom",
+"title": "Tr1ckhouse iDomination",
+"author": "id Software",
+"description": "Railgun and Gauntlet only. One shot, one kill.",
+"basegt": "dom",
+"cvars": {
+"g_domCapTime": "4",
+"g_instagib": "1",
+"g_startingWeapons": "65",
+"g_allowKill": "0",
+"scorelimit": "150",
+"g_overtime": "0",
+"g_loadout": "0",
+"timelimit": "15",
+"g_spawnItemWeapons": "0",
+"g_spawnItemAmmo": "0",
+"g_spawnItemHealth": "0",
+"g_spawnItemPowerup": "0",
+"g_spawnItemHoldable": "0",
+"g_spawnItemWeapons": "0",
+"g_regenHealth": "1250",
+"g_regenHealthRate": "133",
+"g_startingArmor": "100",
+"g_regenArmor": "1250",
+"g_regenArmorAfterHealth": "1"
+}
+}

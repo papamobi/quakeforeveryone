@@ -1,0 +1,26 @@
+    {
+        "id": "eqidom",
+        "title": "euroQuake iDom",
+        "author": "euroQuake",
+        "description": "euroQuake instagib Domination",
+        "basegt": "dom",
+        "tags": ["euroQuake"],
+        "cvars": {
+            "dmflags": "28",
+            "g_allowKill": "1",
+            "g_dropCmds": "0",
+            "g_dropCmds": "1",
+            "g_instagib": "1",
+            "g_overtime": "120",
+            "g_startingWeapons": "65",
+            "g_timeoutCount": "3",
+            "g_timeoutLen": "300",
+            "loadout": "0",
+            "scorelimit": "150",
+            "sv_warmupReadyPercentage": "1",
+            "teamsize": "4",
+            "timelimit": "20",
+            "qlx_balanceApi": "elo_b"
+        }
+    }
+]

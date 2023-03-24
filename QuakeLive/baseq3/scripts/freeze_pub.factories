@@ -1,0 +1,31 @@
+{
+    "cvars": {
+      "g_startingWeapons": "65",
+      "g_railjump": "700",
+      "roundlimit": "15",
+      "roundtimelimit":"0",
+      "g_instagib": "1",
+      "g_dropCmds": "1",
+      "timelimit": "25",
+      "g_freezeThawTick": "1",
+      "g_freezeEnvironmentalRespawnDelay": "3000",
+      "g_freezeRoundDelay": "0",
+      "dmflags": "28",
+      "g_timeoutCount": "3",
+      "g_freezeProtectedSpawnTime": "2000",
+      "g_allowKill": "0",
+      "g_overtime": "0",
+      "teamsize": "8",
+      "pmove_bunnyhop": "1",
+      "pmove_CrouchStepJump": "1",
+      "pmove_JumpTimeDeltaMin": "100.0f",
+      "pmove_WaterSwimScale": "0.6f",
+      "pmove_WaterWadeScale": "0.8f",
+      "qlx_balanceApi": "elo_b"
+    },
+    "author": "id Software",
+    "description": "Railgun and Gauntlet only. One shot, one kill.",
+    "basegt": "ft",
+    "id": "trickft_pub",
+    "title": "Tr1ckhouse iFT"
+  }

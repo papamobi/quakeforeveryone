@@ -1,0 +1,31 @@
+# specify 1 map per line, mapname|factoryid
+# ex: aerowalk|ffa
+# see factories.txt for valid factory id values
+almostlost|cftag
+campgrounds|cftag
+retribution|cftag
+bloodrun|cftag
+chemicalreaction|cftag
+servitude|cftag
+deepinside|cftag
+quarantine|cftag
+purgatory|cftag
+blackcathedral|cftag
+corrosion|cftag
+trinity|cftag
+overkill|cftag
+monastery|cftag
+grimdungeons|cftag
+hiddenfortress|cftag
+battleforged|cftag
+limbus|cftag
+asylum|cftag
+furiousheights|cftag
+theedge|cftag
+
+
+
+
+
+
+

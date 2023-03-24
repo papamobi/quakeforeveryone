@@ -1,0 +1,20 @@
+{
+    "cvars": {
+      "g_startingWeapons": "65",
+      "loadout": "0",
+      "g_instagib": "1",
+      "g_dropCmds": "1",
+      "timelimit": "10",
+      "fraglimit": "0",
+      "g_timeoutCount": "3",
+      "dmflags": "28",
+      "g_allowKill": "0",
+      "g_overtime": "120",
+      "qlx_balanceApi": "elo_b"
+    },
+    "author": "id Software",
+    "description": "Railgun and Gauntlet only. One shot, one kill.",
+    "basegt": "tdm",
+    "id": "tricktdm",
+    "title": "Tr1ckhouse iTDM"
+  }

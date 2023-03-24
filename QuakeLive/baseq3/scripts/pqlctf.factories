@@ -1,0 +1,24 @@
+{
+    "cvars": {
+      "g_startingWeapons": "65",
+      "capturelimit": "8",
+      "g_suddenDeathRespawn": "1",
+      "g_instagib": "1",
+      "g_dropCmds": "1",
+      "timelimit": "20",
+      "dmflags": "28",
+      "g_timeoutCount": "3",
+	  "g_timeoutLen": "120",
+      "g_allowKill": "0",
+      "g_overtime": "0",
+	  "pmove_AirControl": "1",
+      "pmove_bunnyhop": "0",
+      "pmove_CrouchStepJump": "0",
+      "pmove_JumpTimeDeltaMin": "50"
+    },
+    "author": "id Software",
+    "description": "Railgun and Gauntlet only. One shot, one kill.",
+    "basegt": "ctf",
+    "id": "pqlctf",
+    "title": "Tr1ckhouse iCTF"
+ }

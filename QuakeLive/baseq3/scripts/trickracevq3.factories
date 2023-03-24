@@ -1,0 +1,33 @@
+{
+    "id": "vq3",
+    "title": "VQ3 Race",
+    "description": "VQ3 Race",
+    "author": "mobi",
+    "basegt": "race",
+    "cvars": {
+        "dmflags": "28",
+        "fraglimit": "0",
+        "g_allowKill": "1",
+        "g_dropPowerups": "0",
+        "g_infiniteAmmo": "1",
+        "g_itemTimers": "0",
+        "g_overtime": "0",
+        "g_velocity_rl": "900",
+        "g_respawn_delay_max": "10",
+        "g_respawn_delay_min": "10",
+        "g_startingHealthBonus": "0",
+        "g_startingWeapons": "147",
+        "g_warmup": "0",
+        "g_gravity": "750",
+        "pmove_BunnyHop": "0",
+        "pmove_CrouchStepJump": "0",
+        "pmove_JumpTimeDeltaMin": "50",
+        "pmove_noPlayerClip": "1",
+        "pmove_WaterSwimScale": "0.5f",
+        "pmove_WaterWadeScale": "0.75f",
+        "pmove_jumpvelocity": "270.1",
+        "pmove_stepheight": "18",
+	    "pmove_jumpvelocitymax": "20000",
+        "practiceFlags": "1"
+    }
+}

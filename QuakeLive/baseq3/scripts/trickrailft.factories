@@ -1,0 +1,30 @@
+{
+    "cvars": {
+      "g_startingWeapons": "65",
+      "g_railjump": "800",
+      "roundlimit": "20",
+      "roundtimelimit":"0",
+      "g_instagib": "0",
+      "g_dropCmds": "1",
+      "timelimit": "20",
+      "g_freezeThawTick": "1",
+      "g_freezeEnvironmentalRespawnDelay": "3000",
+      "g_freezeRoundDelay": "0",
+      "dmflags": "28",
+      "g_timeoutCount": "3",
+      "g_freezeProtectedSpawnTime": "2000",
+      "g_allowKill": "0",
+      "g_overtime": "0",
+      "g_infiniteAmmo": "1",
+      "g_knockback": "1000",
+      "g_spawnItemWeapons": "0",
+      "g_spawnItemArmor": "1",
+      "g_spawnItemhealth": "1"
+      
+    },
+    "author": "id Software",
+    "description": "Railgun and Gauntlet only. One shot, one kill.",
+    "basegt": "ft",
+    "id": "trickrailft",
+    "title": "Tr1ckhouse iFT"
+}

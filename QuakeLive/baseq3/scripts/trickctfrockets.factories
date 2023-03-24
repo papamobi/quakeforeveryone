@@ -1,0 +1,27 @@
+{
+		"cvars":{
+		"g_startingWeapons":"17",
+		"timelimit":"20",
+		"g_knockback_rl":"2",
+		"g_startingHealth":"100",
+		"fraglimit":"50",
+		"dmflags":"16",
+		"g_spawnItemAmmo":"0",
+		"g_splashdamage_rl":"0",
+		"g_instaGib":"1",
+		"g_spawnItemPowerup":"0",
+		"g_spawnItemArmor":"0",
+		"g_spawnItemHoldable":"0",
+		"g_spawnItemHealth":"0",
+		"g_spawnItemWeapons":"0",
+                "capturelimit": "8",
+                "g_timeoutCount": "3",
+                "g_suddenDeathRespawn": "1",
+                "qlx_balanceApi": "elo"
+	},
+	"basegt": "ctf",
+	"id":"trickctf_r",
+	"title":"Insta CTF Rockets",
+	"author":"FMobile",
+	"description":"Insta CTF With Rockets No Splash Damage Only Direct Hits."
+}
